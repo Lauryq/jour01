@@ -1,0 +1,113 @@
+.path1 {
+  animation: anim1 1s infinite;
+}
+
+@keyframes anim1 {
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+.path2 {
+  animation: anim2 1s infinite;
+
+}
+
+@keyframes anim2 {
+  30% {
+    transform: translateY(-20px)
+  }
+}
+
+.path3 {
+  animation: anim3 1s infinite;
+
+}
+
+@keyframes anim3 {
+  40% {
+    transform: translateY(-20px)
+  }
+}
+
+.path4 {
+  animation: anim4 1s infinite;
+
+}
+
+@keyframes anim4 {
+  50% {
+    transform: translateY(-20px)
+  }
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+main{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+svg {
+    overflow: visible;
+}
+
+section {
+    text-align: center;
+}
+
+section p:nth-child(1){
+    animation: apparition 3s forwards;
+    font-size: 2rem;
+    align-self: start;
+}
+
+@keyframes apparition {
+    from {
+        color: #ffffff;
+    } to {
+        color: #D03939;
+    }
+}
+
+section p:nth-child(2){
+  text-align: center;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+    50% {
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    main {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+        align-self: center;
+    }
+
+    svg {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    section {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
