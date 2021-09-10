@@ -8,15 +8,61 @@
     <title>Binaire/Hexadécimal</title>
 </head>
 <body>
+    <header>
+        <img src="img/logo.png" alt="logo avec un 0 et un 1 en linear gradient bleu et violet" width="120" height="120">
+    </header>
     <main>
         <h1>Binaire et Hexadécimal</h1>
-        <p class="description"><span>S</span>ite pour connaître ma date de naissance en code <b>binaire</b> et hexadécimal. <span>S</span>ans grand intérêt mais avec quelques explications tout de même (pour celles que j'aurais comprises). <span>U</span>n code secret est caché dans le header pour un peu plus de <b>fun</b> (pas tout de suite, je te dirai).
+        <p class="description"><span>S</span>ite pour connaître ma date de naissance en code <b class="souligne">binaire</b> et hexadécimal. <span>S</span>ans grand intérêt mais avec quelques explications tout de même (pour celles que j'aurais comprises). <span>U</span>n code secret est caché dans le header pour un peu plus de <strike><b>fun</b></strike> (pas tout de suite, je te dirai).
         </p>
-        <h2>Code binaire</h2>
-        <p>011111001100</p>
-        <h2>Code hexadécimal</h2>
-        <p>7CC</p>
-        <p></p>
+        <section>
+            <article>
+                <h2>Code binaire</h2>
+                <p>011111001100</p>
+                <p>Explication: système de numération utilisant deux valeurs, le 0 et le 1. On commence par la droite, chaque chiffre ajoutera 1 à l'exposant de 2.</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>1024</td>
+                            <td>512</td>
+                            <td>256</td>
+                            <td>128</td>
+                            <td>64</td>
+                            <td>32</td>
+                            <td>16</td>
+                            <td>8</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>On a donc 4+8+64+128+256+512+1024 = 1996</p>
+            </article>
+            <article>
+                <h2>Code hexadécimal</h2>
+                <p>7CC</p>
+                <p>Explication: on sépare par bloc de 4 le binaire (on ajoute des 0 si nécessaire au premier bloc en partant de la gauche). On obtient donc :</p>
+                <p>0111 1100 1100</p>
+                <p>On fait la somme des 1 par rapport à 2 exposant n. On aura donc 0111 = 0 + 4 + 2 + 1 = 7, 1100 = 8 + 4 + 0 + 0 = 12.</p>
+                <p>Jusqu'à 9 l'hexadécimal utilise les nombres décimaux de base.</p>
+                <p>Au dessus on part sur l'alphabet en commençant par A.</p>
+                <p>7 = 7 et 12 = C</p>
+            </article>
+        </section>
     </main>
     
 </body>

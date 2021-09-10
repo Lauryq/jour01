@@ -3,8 +3,17 @@
     src: url(font/Helvetica.otf);
 }
 
+@font-face {
+    font-family: "anaheim";
+    src: url(font/Anaheim-Regular.ttf);
+}
+
 body {
     background-color: #232323;
+}
+
+h1 h2 {
+    font-family: "anaheim";
 }
 
 main {
@@ -31,4 +40,52 @@ main p {
 
 .description span:nth-child(3){
     color:salmon;
+}
+
+header {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top:2rem ;
+}
+
+header img {
+    padding: 2rem;
+border-radius: 50px;
+background: linear-gradient(145deg, #222222, #1d1d1d);
+box-shadow:  20px 20px 57px #0f0f0f,
+             -20px -20px 57px #313131;
+    
+}
+
+.souligne {
+    text-decoration: underline;
+}
+
+article p {
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+table {
+    border: 1px solid white;
+    width: 70%;
+}
+
+td {
+    border: 1px solid rgb(172, 172, 172);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width: 1024px) {
+    section {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
 }
