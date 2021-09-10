@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "anaheim";
+    src: url(../exercice1/font/Anaheim-Regular.ttf);
+}
+
+
+body {
+    background-color: #6C63FF;
+    background-image: url(img/run.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:right;
+    color: white;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    width: 50%;
+}
+
+li {
+    list-style: none;
+    border: 2px solid rgb(62, 62, 196);
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    background: #6C63FF;
+    box-shadow:  5px 5px 10px #564fcc,
+                -5px -5px 10px #8277ff;
+}
+
+li:hover{
+    border: .1rem solid blueviolet;
+}
+
+li:nth-child(4):hover{
+    border: .1rem solid green;
+}
+
+p {
+    width: 30%;
+    margin-bottom: 5rem;
+}
+
+main {
+    padding:5rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: "anaheim";
+}
+
+h2, h3 {
+    font-family: "anaheim";
+}
+
+h2:nth-child(3) {
+    margin-left: 5rem;
+}
+
+h2:nth-child(4){
+    margin-left: 10rem;
+}
+
+h3:nth-child(5){
+    margin-left: 5rem;
+}
