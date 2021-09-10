@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "";
-    src: url();
+    font-family: "helvetica";
+    src: url(font/Helvetica.otf);
 }
 
 body {
@@ -16,4 +16,7 @@ main {
 
 main p {
     text-align: center;
+    font-family: "helvetica";
+    letter-spacing: .5rem;
+    line-height: 3rem;
 }
