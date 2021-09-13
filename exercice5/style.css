@@ -1,0 +1,13 @@
+.carre {
+    width: 5rem;
+    height: 5rem;
+    background-color:  rgb(116, 208, 241);
+}
+
+.btn_section3 {
+    background-image: url(img/des.jpg);
+    background-size: cover;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
