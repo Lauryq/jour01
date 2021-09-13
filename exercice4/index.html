@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Droits Linux</title>
 </head>
 <body>
@@ -35,45 +35,51 @@
         </div>
     </nav>
 
-    <h1>Les Droits Linux</h1>
+    <main class="container">
 
-    <section id="Home">
-        <h2>Différence entre les deux</h2>
-        <article>
-            <img class="diff" src="img/difference.jpg" alt="image montrant la différence entre chmod et chown" width="200">
-            <p class="p_section1">En simple terme chown est utilisé pour changer la propriété d'un fichier alors que chmod pour changer les bits de
+        <h1 class="text-primary">Les Droits Linux</h1>
+
+        <section id="Home">
+            <article>
+                <h2 class="p-3">Différence entre chmod et chown</h2>
+                <p>En simple terme chown est utilisé pour changer la propriété d'un fichier alors que chmod pour changer les bits de
                 mode
                 de fichier. chown définit à qui appartient le fichier. chmod définit qui peut faire quoi.</p>
-        </article>
-        
-    </section>
-    <section id="Chmod">
-        <h2>CHMOD</h2>
-        <article>
-            <p>Chmod (<span>Ch</span>ange <span>Mod</span>e) est une commande qui permet de changer les permissions d'accès d'un fichier ou d'un répertoire.</p>
-            <p>Les permissions possibles sont :</p>
-            <ul>
-                <li>r (4): autorisation de lecture</li>
-                <li>w (2): autorisation d'écriture</li>
-                <li>x (1): autorisation d'exécution</li>
-            </ul>
-            <p>On peut modifier ces permissions grâce à leur nombre en octal.</p>
-            <p>Les droits sont attribués pour 3 entités différentes. En premier le "propriétaire", en deuxième le "groupe" et en troisième "le  reste du monde".</p>
-            <p>Nous pouvons donc trouver par exemple : drwxr-xr-x.</p>
-            <p>Pour que l'utilisateur puisse avoir un droit d'exécution nous pouvons faire la commande :</p>
-            <p>sudo chmod 775 nomdufichier</p>
-        </article>
-    </section>
-    <section id="Chown">
-        <h2>CHOWN</h2>
-        <article>
-            <p>Chown (<span>Ch</span>ange <span>Own</span>er) est une commande qui permet de changer le propriétaire et le groupe d'un fichier ou d'un dossier.</p>
-            <p>Le propriétaire et le groupe seront séparés par ":" + le nom du ficher/dossier</p>
-            <p>Nous pouvons donc trouver par exemple : lauryquarto www-data</p>
-            <p>Pour modifier le propriétaire en root et le groupe en "lauryquarto" :</p>
-            <p>sudo chown root:lauryquarto nomdufichier</p>
-        </article>
-    </section>
+            </article>
+        </section>
+
+        <section id="Chmod" class="d-flex justify-content-between">
+            <img src="img/chmod.png" alt="">
+            <article>
+                <h2 class="p-3">CHMOD</h2>
+                <p>Chmod (<span>Ch</span>ange <span>Mod</span>e) est une commande qui permet de changer les permissions d'accès d'un fichier ou d'un répertoire.</p>
+                <p>Les permissions possibles sont :</p>
+                <ul class="list-group">
+                    <li class="list-group-item bg-light">r (4): autorisation de lecture</li>
+                    <li class="list-group-item bg-light">w (2): autorisation d'écriture</li>
+                    <li class="list-group-item bg-light">x (1): autorisation d'exécution</li>
+                </ul>
+                <p>On peut modifier ces permissions grâce à leur nombre en octal.</p>
+                <p>Les droits sont attribués pour 3 entités différentes. En premier le "propriétaire", en deuxième le "groupe" et en troisième "le  reste du monde".</p>
+                <p>Nous pouvons donc trouver par exemple : drwxr-xr-x.</p>
+                <p>Pour que l'utilisateur puisse avoir un droit d'exécution nous pouvons faire la commande :</p>
+                <p class="text-primary">sudo chmod 775 nomdufichier</p>
+            </article>
+        </section>
+
+        <section id="Chown" class="d-flex justify-content-between">
+            <img src="img/chown_command.png" alt="">
+            <article>
+                <h2 class="p-3">CHOWN</h2>
+                <p>Chown (<span>Ch</span>ange <span>Own</span>er) est une commande qui permet de changer le propriétaire et le groupe d'un fichier ou d'un dossier.</p>
+                <p>Le propriétaire et le groupe seront séparés par ":" + le nom du ficher/dossier</p>
+                <p>Nous pouvons donc trouver par exemple : lauryquarto www-data</p>
+                <p>Pour modifier le propriétaire en root et le groupe en "lauryquarto" :</p>
+                <p class="text-primary">sudo chown root:lauryquarto nomdufichier</p>
+            </article>
+        </section>
+
+    </main>
     
 
     <footer class="bg-light text-center text-lg-start">
