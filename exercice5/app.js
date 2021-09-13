@@ -67,6 +67,9 @@ function maj(texte){
             let response = String.fromCharCode(code);
             let maj = response.toUpperCase();
             temp = temp + maj;
+        } else {
+            let response = String.fromCharCode(code);
+            temp = temp + response;
         }
 
     }
