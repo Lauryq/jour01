@@ -19,10 +19,25 @@ carre.addEventListener('click', function(){
 })
 
 /*3ème section*/
-let array = ["Dune", "Forrest Gump", "La ligne Verte", "Le Parrain", "Les Évadés"];
-let film = Math.floor(Math.random() * array.length);
+let myArray = ["Dune", "Forrest Gump", "La ligne Verte", "Le Parrain", "Les Évadés"];
 
-let p3 = document.createElement('p');
-let txt3 = document.createTextNode(`${film}`);
-p1.appendChild(txt1);
-section_1.appendChild(p1);
+function random(array){
+    let film = Math.floor(Math.random() * array.length);
+    return film;
+}
+
+section_3.addEventListener('click', function(){
+
+    let res = document.querySelector('.resultat');
+    if(res){
+        res.remove();
+    }
+
+    let result = random(myArray);
+    let p3 = document.createElement('p');
+    let txt3 = document.createTextNode(`${myArray[result]}`);
+    p3.appendChild(txt3);
+    p3.className = "resultat";
+    section_3.appendChild(p3);
+
+})
