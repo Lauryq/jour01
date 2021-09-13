@@ -1,5 +1,6 @@
 const section_1 = document.querySelector('.section1');
-const section_3 = document.querySelector('.section3')
+const section_3 = document.querySelector('.section3');
+const section_5 = document.querySelector('.section5');
 const carre = document.querySelector('.carre');
 const input = document.querySelector('input');
 const btn4 = document.querySelector('.btn_section4');
@@ -90,3 +91,37 @@ btn4.addEventListener('click', function(){
 })
 
 /*5ème section*/
+/* fonction pour chiffre au hasard entre 8 et 16*/
+function randomIntFromInterval(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+/*stock taille dans variable*/
+
+function mdp(size){
+
+    let temp = '';
+
+    for (let i = 0; i < size; i++) {
+        let code = Math.floor(Math.random() * (126 - 33 + 1) + 33);
+        let res = String.fromCharCode(code);
+        temp = temp + res;
+    }
+
+    return temp;
+}
+
+btn5.addEventListener('click', function(){
+
+    let res = document.querySelector('.resmdp');
+    if(res){
+        res.remove();
+    }
+    let size = randomIntFromInterval(8, 16);
+    let resmdp = mdp(size);
+    let p5 = document.createElement('p');
+    p5.className = "resmdp";
+    let txt5 = document.createTextNode(`Votre mdp est ${resmdp}`);
+    p5.appendChild(txt5);
+    section_5.appendChild(p5);
+})

@@ -2,7 +2,7 @@
 
 ## Description  
 
-Réaliser une page web responsive ayant pour but de réviser les interactions avec le DOM depuis le JS.
+Réaliser une page web responsive ayant pour but de réviser les interactions avec le DOM depuis le JS et autres fonctions JS.
 
 ## Consignes sur les langages et outils
 * HTML5/CSS3/JS ES6 uniquement
