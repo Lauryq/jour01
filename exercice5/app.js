@@ -3,6 +3,7 @@ const section_3 = document.querySelector('.section3')
 const carre = document.querySelector('.carre');
 const input = document.querySelector('input');
 const btn4 = document.querySelector('.btn_section4');
+const btn5 = document.querySelector('.btn_section5');
 const p4 = document.querySelector('.p_section4');
 const nom = 'Quarto';
 const prenom = 'Laury';
@@ -87,3 +88,5 @@ btn4.addEventListener('click', function(){
     p4.appendChild(txt4);
 
 })
+
+/*5ème section*/
