@@ -19,7 +19,7 @@ document.addEventListener('keydown', function(event){
         body.style.backgroundColor = "yellow";
     } else if (key == 'ArrowUp'){
         let btn = document.createElement('button');
-        let txt = document.createTextNode('toto');
+        let txt = document.createTextNode('TOTO');
         btn.appendChild(txt);
         btn.setAttribute("id", "bouton");
         body.appendChild(btn);
@@ -38,18 +38,26 @@ document.addEventListener('click',function(e){
         let person = prompt("Entrez votre date de naissance (dd/mm/yyyy)");
         let birth = person.split("/").reverse().join("-");
         let date = new Date(birth);
+        let yBirth = date.getFullYear();
+        let mBirth = date.getMonth() + 1;
+        let dBirth = date.getDay();
 
-        // console.log(date);
-
+        // get l'age en année
         let auj = new Date();
-        let age = auj.getFullYear() - date.getFullYear();
+        let yAuj = auj.getFullYear();
+        let mAuj = auj.getMonth();
+        let dAuj = auj.getDay();
 
-        let jour = auj.
-        console.log(reste);
-        if (age >= 25) {
+        let Diff = auj - date;
+        let age = Math.floor(Diff / (1000 * 86400));
+        
+        console.log(age);
+
+        if (age >= 9125) {
             person = alert("Bienvenue");
         } else {
-            person = alert(`Il faut attendre encore ${reste} jours`);
+            let jDiff = 9131 - age;
+            person = alert(`Il faut attendre encore ${jDiff} jours`);
         }
         
      }
