@@ -35,21 +35,22 @@ let btn_toto = document.querySelector('#bouton');
 document.addEventListener('click',function(e){
     if(e.target && e.target.id== 'bouton'){
 
-        let text;
         let person = prompt("Entrez votre date de naissance (dd/mm/yyyy)");
-        
         let birth = person.split("/").reverse().join("-");
-        
         let date = new Date(birth);
 
-        console.log(date);
+        // console.log(date);
 
-        // if (person == null || person == "") {
-        //     text = "Bienvenue";
-        // } else {
-        //     text = "Il faut attendre encore x jours";
-        // }
+        let auj = new Date();
+        let age = auj.getFullYear() - date.getFullYear();
+
+        let jour = auj.
+        console.log(reste);
+        if (age >= 25) {
+            person = alert("Bienvenue");
+        } else {
+            person = alert(`Il faut attendre encore ${reste} jours`);
+        }
         
-        document.getElementById("demo").innerHTML = text;
      }
 });
