@@ -34,7 +34,7 @@ document.addEventListener('keydown', function(event){
             if(p_aff){
                 p_aff.remove();
             }
-            
+
             let p = document.createElement('p');
             let txt_p = document.createTextNode(`PLUS`);
             p.appendChild(txt_p);
@@ -47,7 +47,9 @@ document.addEventListener('keydown', function(event){
             popup.appendChild(txt);
             popup.className = "pop";
             body.appendChild(popup);
+            document.querySelector('svg').style.display = "block";
         }
     } 
 
 })
+
